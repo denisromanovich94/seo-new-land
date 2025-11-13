@@ -121,12 +121,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize Wheel of Fortune
     window.wheelOfFortuneInstance = new WheelOfFortune();
 
-    // Auto-open wheel modal after 1 second (only once)
+    // Auto-open wheel modal after 10 seconds (only once)
     if (!sessionStorage.getItem('wheelShown')) {
         setTimeout(() => {
             wheelModal.open();
             sessionStorage.setItem('wheelShown', 'true');
-        }, 1000);
+        }, 10000);
     }
 });
 
