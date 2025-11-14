@@ -154,6 +154,62 @@ document.addEventListener('DOMContentLoaded', function() {
         const logosContent = logosTrack.innerHTML;
         logosTrack.innerHTML = logosContent + logosContent;
     }
+
+    // Initialize Cases Swiper
+    const casesSwiper = new Swiper('.casesSwiper', {
+        // Slides per view configuration
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        // Breakpoints for responsive design
+        breakpoints: {
+            // When window width is >= 640px (tablet)
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // When window width is >= 1024px (desktop)
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        },
+
+        // Enable loop mode
+        loop: true,
+
+        // Autoplay configuration
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        // Enable mouse wheel scrolling
+        mousewheel: {
+            forceToAxis: true,
+            sensitivity: 1,
+        },
+
+        // Enable keyboard control
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+        },
+
+        // Enable grab cursor
+        grabCursor: true,
+
+        // Smooth animations
+        speed: 600,
+
+        // Accessibility
+        a11y: {
+            enabled: true,
+            prevSlideMessage: 'Предыдущий слайд',
+            nextSlideMessage: 'Следующий слайд',
+        },
+    });
 });
 
 // Console log for debugging

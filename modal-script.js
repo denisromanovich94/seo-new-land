@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     consultationButtons.forEach(btn => {
         const text = btn.textContent.toLowerCase();
-        if (text.includes('консультац') || text.includes('тариф')) {
+        if (text.includes('консультац') || text.includes('тариф') || text.includes('заказать')) {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 contactModal.open();

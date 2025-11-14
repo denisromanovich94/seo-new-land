@@ -582,6 +582,27 @@ body {
     color: hsl(215, 15%, 65%);
 }
 
+/* Cases Swiper Styles */
+.cases-swiper-container {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.casesSwiper {
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: visible;
+}
+
+.casesSwiper .swiper-slide {
+    height: auto;
+}
+
+.casesSwiper .swiper-wrapper {
+    display: flex;
+}
+
 /* Footer */
 .footer {
     padding: 3rem 0;
